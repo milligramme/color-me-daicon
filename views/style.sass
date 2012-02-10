@@ -1,0 +1,66 @@
+@import "reset"
+
+$base: #332
+$main: #ffd
+
+a
+  color: $main
+  &:link
+    color: $main * 0.5
+  &:visited
+    color: $main * 0.5
+  &:hover
+    color: $main - #111111
+  &:active
+    color: $main * 0.3
+
+
+body
+  background: $base
+  color: $main
+  // font: .7em/1.5em Georgia, "Lucida Grande", "Lucida Sans Unicode", helvetica, verdana, arial, times, "Times New Roman", sans-serif
+  
+  .wrapper
+    margin: 0 auto
+    min-width: 720px
+    width: 80%
+    
+    .header
+      margin-top: 32px
+      h2
+        font-family: 'Give You Glory', cursive
+        font-size: 300%
+        line-height: 120%
+      form.search
+        margin: 0        
+      ul#nav
+        margin: 6px 0
+        li
+          display: inline-block
+          list-style: none
+          text-decoration: none
+    
+    table.timeline
+      tr
+        td.color
+          min-width: 160px
+          width: 40%
+          span.bar
+            margin: -0.2em
+            font-size: 400%
+            line-height: 50%
+        td.tw
+          min-width: 320px
+          font-size: 90%
+          color: #665
+          padding: 3em 0 2em 3em
+          line-height: 150%
+          span.user
+            color: #998
+            font-size: 80%
+          
+          
+    .footer
+      margin: 20px 0 5px
+      p
+        text-align: center

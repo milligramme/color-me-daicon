@@ -1,0 +1,10 @@
+%table.timeline
+  - @pt.each do |tw|
+    %tr
+      %td.color{:style => "width:40%"}
+        - convert_hex("#{tw.text}").each do |x|
+          %span.bar{:style => "color:##{x}"} ■
+      %td.tw 
+        %span.user
+          @#{tw.user.screen_name}
+        #{tw.text}

@@ -1,0 +1,10 @@
+.header
+  %h2 Color Me
+  %form.search{:action => "/tweets", :method => "post"}
+    %label{:for => "user_name"} User name: @ 
+    %input{:type => "text", :name => "user_name"}
+    %input{:type => "submit", :value => "color me!", :name => "data"}
+    
+  %ul#nav
+    %li 
+      %a{:href => "/"} ☁public timeline

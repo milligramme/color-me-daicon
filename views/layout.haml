@@ -1,0 +1,12 @@
+!!! 5
+%html
+  %head
+    %meta{:charset => "utf-8"}
+    %title Color Me
+    %link{:rel => "stylesheet", :href => "/style.css"}
+    %link{:href => 'http://fonts.googleapis.com/css?family=Give+You+Glory&v2', :rel => 'stylesheet', :type => 'text/css'}    
+  %body
+    .wrapper  
+      = haml :_header
+      = yield
+      = haml :_footer
